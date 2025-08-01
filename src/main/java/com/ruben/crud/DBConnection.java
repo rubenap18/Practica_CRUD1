@@ -9,7 +9,8 @@ public class DBConnection {
 
     public static Connection getConnection() throws SQLException{
         if (connection == null || connection.isClosed()) {
-            connection = DriverManager.getConnection("jdbc:sqlite:/home/rubencin/PracticasJava/practica-crud/src/main/java/com/ruben/crud/base.db");
+            connection = DriverManager.getConnection(
+                "jdbc:sqlite:/home/rubencin/PracticasJava/practica-crud/src/main/resources/base.db");
 
         }
         return connection;

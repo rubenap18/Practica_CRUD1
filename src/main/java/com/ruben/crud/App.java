@@ -5,8 +5,6 @@ package com.ruben.crud;
  */
 public class App {
     public static void main(String[] args) {
-        
-        
         PantallaPrincipalGUI p = new PantallaPrincipalGUI();
     }
 }
