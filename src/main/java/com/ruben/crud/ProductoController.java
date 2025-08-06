@@ -14,4 +14,15 @@ public class ProductoController {
             return false;
         }
     }
+    public boolean eliminarProducto(Producto producto) {
+        try {
+            ProductoDAO productoDAO = new ProductoDAO(DBConnection.getConnection());
+            productoDAO.agregarProducto(producto);
+            DBConnection.closeConnection();
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
 }

@@ -13,6 +13,7 @@ public class App {
         b.agregarUsuario(1, "Papitas", 20);
         b.cerrar();*/
         
+
         PantallaPrincipalGUI p = new PantallaPrincipalGUI();
     }
 }
